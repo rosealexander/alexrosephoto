@@ -1,0 +1,341 @@
+/* -- Updated 2020 -- */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+::placeholder {
+    color: gainsboro;
+    font-size: 1em;
+}
+
+a {
+    font-size: calc(11px + 1vmin);
+    font-family: 'Source+Sans+Pro', sans-serif;
+    color: #69d3c5;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+    -webkit-transition: opacity 0.1s ease-in;
+    -moz-transition: opacity 0.1s ease-in;
+    -o-transition: opacity 0.1s ease-in;
+    transition: opacity 0.1s ease-in;
+}
+
+h2 {
+    font-family: 'Archivo Narrow', sans-serif;
+    color: #69d3c5;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+img {
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+body {
+    background-color: ghostwhite;
+}
+
+#body-cover {
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+footer {
+    color: Gainsboro;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.about-bio {
+    position: absolute;
+    left: 50%;
+    top: 20vh;
+    transform: translate(-50%, 0);
+    z-index: -1;
+    padding-bottom: 72px;
+}
+
+.logo-link {
+    margin: 2vmin 0 0 1vmin;
+    position: fixed;
+}
+
+.catalog-link {
+    right: 0;
+    margin: calc(12px + 2vmin) calc(24px + 1vmin) 0 0;
+    position: fixed;
+    text-align: right
+}
+
+.instagram-link {
+    bottom: 0;
+    right: 0;
+    margin: 0 calc(24px + 1vmin) calc(12px + 3vmin) 0;
+    position: fixed;
+    text-align: right;
+}
+
+.contact-button {
+    bottom: 0;
+    margin: 0 0 calc(12px + 3vmin) calc(24px + 1vmin);
+    position: fixed;
+}
+
+.body-cover {
+    width: 100vw;
+    height: 100vh;
+}
+
+.imageBackground {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.noscript-background {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.slide-container-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.slide-container-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.slide-container-3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.slide-container-wide {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.slide-container-1 img {
+    max-height: 60vmin;
+}
+
+.slide-container-2 img {
+    padding: 0 12px;
+    max-height: 50vmin;
+}
+
+.slide-container-3 img {
+    padding: 0 12px;
+    max-height: 40vmin;
+}
+
+.slide-container-wide img {
+    max-height: 50vmin;
+}
+
+.container {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact-container-background {
+    background-color: white;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact-form {
+    position: fixed;
+    width: 70vw;
+    max-width: 600px;
+    max-height: 80vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #F9F9F9;
+    box-sizing: border-box;
+    padding: 25px;
+    box-shadow: 5px 10px 100px 0 rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: medium none;
+    margin: 0 0 10px;
+    min-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 0 0 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.contact-submit {
+    width: 64px;
+}
+
+input[disabled]#contact_submit,
+input[disabled]#contact_submit:hover,
+input[disabled]#contact_submit:active,
+input[disabled]#contact_submit:focus {
+    box-shadow: none;
+    outline: none;
+    opacity: 0.5;
+}
+
+.g-recaptcha {
+    padding-bottom: 12px;
+}
+
+.logo {
+    width: calc(72px + 3vmin);
+}
+
+.about-text-mobile {
+    display: none
+}
+
+.contact-text-mobile {
+    display: none;
+}
+
+@media (max-width:400px) {
+    .logo {
+        width: 92px;
+    }
+    .about-text-mobile {
+        display: block;
+    }
+    .contact-text-mobile {
+        display: block;
+    }
+    .about-text {
+        display: none;
+    }
+    .contact-text {
+        display: none;
+    }
+    a {
+        font-size: 18px;
+    }
+    .g-recaptcha {
+        transform: scale(0.7);
+        transform-origin: 0 0;
+        padding: 0;
+    }
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -moz-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.fade2 {
+    -webkit-animation-name: fade2;
+    -moz-animation-name: fade2;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    animation-name: fade2;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade2 {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade2 {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* -- END FILE -- */
+/* -- Main CSS | Created for alexrosephoto.com -- */
