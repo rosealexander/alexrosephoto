@@ -1,23 +1,5 @@
 /*jslint browser */
 /*global window */
-/**
- * contact page popup
- @param  {Element}   contactButton   contact link button found in index.html labeled as "contact"
- @param  {Element}   contactContainerBackground   transparent div element that takes up 100% vh & vw
- */
-//open and close on click
-document.getElementById("contact-link").onclick = function () {
-    "use strict";
-    document.getElementById("contactContainer").style.display = "block";
-};
-document.getElementById("contactContainerBackground").onclick = function () {
-    "use strict";
-    document.getElementById("contactContainer").style.display = "none";
-};
-// google reCaptcha
-function recaptcha_callback() {
-    document.getElementById("contact_submit").removeAttribute('disabled');
-}
 
 /**
  * create slideshow from images
